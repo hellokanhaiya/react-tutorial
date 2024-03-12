@@ -1,13 +1,15 @@
-import { useState } from "react";
-
-function App({ children }) {
-  const [count, setCount] = useState(0);
-
+import React from "react";
+import MainHeading from "./components/MainHeading";
+import IndeanTime from "./components/Indean-time";
+import CurrentTime from "./components/Current-time";
+const App = () => {
   return (
     <div>
-      <main className="flex ">{children}</main>
+      <MainHeading></MainHeading>
+      <IndeanTime></IndeanTime>
+      <CurrentTime></CurrentTime>
     </div>
   );
-}
+};
 
 export default App;

@@ -5,10 +5,6 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App>
-      <div>This is Tutorial </div>
-      <div>This is Tutorial </div>
-      <div>This is Tutorial </div>
-    </App>
+    <App />
   </React.StrictMode>
 );
