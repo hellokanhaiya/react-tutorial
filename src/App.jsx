@@ -1,22 +1,17 @@
-import React from "react";
-
-// fragment use karne ka do metod hai
-//  first app react ko import kar lijiye react.fragments ka use kijiye
+import { list } from "postcss";
 
 const App = () => {
+  let foodItem = ["Dall", "Roti", "Milk", "Ghee", "Salad", "Green Vegtrial"];
   return (
-    //  fragment use karne ka dusra tarika <> start kijye and </> isse end kiiye
-    <React.Fragment>
+    <>
       <h1 className="text-5xl font-bold">Healty Food</h1>
+      {/* yadi hame yaha js likhana to {} medium bracket ka use karna padega */}
       <ul className="felx my-4">
-        <li className="border-t text-3xl">Dal</li>
-        <li className="border-t text-3xl">Green vegitable</li>
-        <li className="border-t text-3xl">Salad</li>
-        <li className="border-t text-3xl">Roti</li>
-        <li className="border-t text-3xl">Milk</li>
-        <li className="border-t text-3xl">Aggs</li>
+        {foodItem.map((item) => (
+          <li className="text-3xl border-t-2 py-2 px-10">{item}</li>
+        ))}
       </ul>
-    </React.Fragment>
+    </>
   );
 };
 
