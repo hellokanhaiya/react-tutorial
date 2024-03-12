@@ -8,8 +8,7 @@ function App() {
   return (
     <div>
       <main className="flex text-white">
-        <div>First</div>
-        <div>Second</div>
+        <div>This is Tutorial 2</div>
       </main>
     </div>
   );
