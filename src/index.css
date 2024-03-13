@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.kg-bg {
+  background-color: khaki;
+}
+.kg-item {
+  color: orangered;
+}
+.color {
+  color: aqua;
+}
