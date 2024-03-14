@@ -1,22 +1,31 @@
 import { list } from "postcss";
-import FoodItem from "./components/FoodItems";
-import Errormess from "./components/ErrorMess";
+import MainHeading from "./components/Mainheading";
+import InputItme from "./components/Input";
+import TodoItems from "./components/Todoitems";
+import Todoitem from "./components/todoitem";
+function App() {
+  const todoitems = [
+    {
+      name: "By milk",
+      date: "4/10/2023",
+    },
+    {
+      name: "Go to collage",
+      date: "4/10/2023",
+    },
+    {
+      name: "Like the video",
+      date: "14/03/2024",
+    },
+  ];
 
-///  Condition Sentence
-const App = () => {
-  let foodItem = ["Dall", "Roti", "Milk", "Ghee", "Salad", "Green Vegtrial"];
-  // let foodItem = [];
-  //  if else statement
-  // if (foodItem1.length === 0) {
-  //   return <h1>I am still hungry</h1>;
-  // f
   return (
     <>
-      <h1 className="text-5xl font-bold color">Healty Food</h1>
-      <FoodItem items={foodItem}></FoodItem>
-      <Errormess items={foodItem}></Errormess>
+      <MainHeading />
+      <InputItme />
+      <TodoItems todoitems={todoitems}></TodoItems>
     </>
   );
-};
+}
 
 export default App;
